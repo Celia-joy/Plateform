@@ -10,6 +10,7 @@ function LoginPage (){
             console.log('Please fill all fields')
             return 
         }
+        navigate("/dashboard")
         console.log("Email:", email)
         console.log("Password:", password)
     }
@@ -44,6 +45,15 @@ function LoginPage (){
                         value={password}
                         onChange={(e)=> setPassword(e.target.value)}
                         />
+                    </div>
+                    <div className="text-right mb-4">
+                        <button 
+                          onClick={() => navigate("/reset-password")}
+                          className="text-xs text-[#F5C518] font-semibold"
+                        >
+                          Forgot password?
+                        </button>
+
                     </div>
                     <button
                         onClick={handleLogin}

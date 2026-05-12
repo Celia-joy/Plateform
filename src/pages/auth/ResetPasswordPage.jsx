@@ -46,11 +46,12 @@ function ResetPasswordPage() {
                         <span>--------------- or ---------------</span>
                         <div className="flex-1 h-px bg-gray-200"></div>
                     </div>
-                    <div className="flex items-center gap-3 mb-4">
-                        <div className="flex-1 h-px bg-gray-200"></div>
-                        <span>Back to login</span>
-                        <div className="flex-1 h-px bg-gray-200"></div>
-                    </div>
+                    <button
+                       onClick={() => navigate("/login")}
+                       className="w-full text-sm text-gray-500 text-center hover:text-[#2D5016]"
+                       >
+                         ← Back to login
+                    </button>
                 </div>
             </div>
         </div>
