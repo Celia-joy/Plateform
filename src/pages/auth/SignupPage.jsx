@@ -24,11 +24,11 @@ function SignupPage(){
     }
 
     return (
-        <div className="min-h-screen flex items-center justify-center p-4">
+        <div className="min-h-screen bg-[#2D5016] flex items-center justify-center p-4">
             <div className="w-full max-w-sm bg-white rounded-3xl overflow-hidden">
                 <div className="bg-[#2D5016] px-8 pt-10 pb-8 text-center">
                     <h1 className="text-2xl font-bold text-center mb-6">Plate 
-                        <span className="text-[#F5C518">Form</span>
+                        <span className="text-[#F5C518]">Form</span>
                     </h1>
                     <p className="text-sm text-white mt-1"> Create an account</p>
                 </div>
