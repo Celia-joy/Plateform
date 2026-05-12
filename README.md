@@ -108,60 +108,56 @@ PlateForm solves a real hospitality pain point: **table reservation collisions**
 ## 5. Project Structure
 
 ```
-plateform/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── assets/              # Images, logos, static files
-│   ├── components/          # Reusable UI components
-│   │   ├── ui/              # Atoms: Button, Input, Badge, Modal...
-│   │   ├── layout/          # Sidebar, Navbar, PageWrapper...
-│   │   └── shared/          # OrderCard, MenuItemCard, ClientRow...
-│   ├── pages/               # One file per route/screen
-│   │   ├── auth/
-│   │   │   ├── SignupPage.jsx
-│   │   │   ├── LoginPage.jsx
-│   │   │   ├── CheckEmailPage.jsx
-│   │   │   ├── LinkSentPage.jsx
-│   │   │   └── ResetPasswordPage.jsx
-│   │   ├── dashboard/
-│   │   │   ├── OverviewPage.jsx
-│   │   │   ├── OrdersPage.jsx
-│   │   │   ├── MenusPage.jsx
-│   │   │   ├── ClientsPage.jsx
-│   │   │   └── NotificationsPage.jsx
-│   │   ├── orders/
-│   │   │   ├── OrderListPage.jsx
-│   │   │   └── OrderDetailPage.jsx
-│   │   ├── menus/
-│   │   │   ├── MenuListPage.jsx
-│   │   │   └── CreateMenuItemPage.jsx
-│   │   ├── clients/
-│   │   │   ├── ClientListPage.jsx
-│   │   │   ├── AddClientPage.jsx
-│   │   │   └── ClientDetailPage.jsx
-│   │   └── settings/
-│   │       └── SettingsPage.jsx
-│   ├── context/             # React Context providers
-│   │   ├── AuthContext.jsx
-│   │   └── AppContext.jsx
-│   ├── hooks/               # Custom React hooks
-│   │   ├── useAuth.js
-│   │   ├── useOrders.js
-│   │   └── useMenuItems.js
-│   ├── services/            # API call functions
-│   │   ├── api.js           # Axios instance setup
-│   │   ├── authService.js
-│   │   ├── ordersService.js
-│   │   └── menuService.js
-│   ├── utils/               # Pure helper functions
-│   │   ├── formatDate.js
-│   │   ├── formatCurrency.js
-│   │   └── constants.js
-│   ├── styles/
-│   │   └── index.css        # Tailwind directives + global styles
-│   ├── App.jsx              # Root component + route definitions
-│   └── main.jsx             # React DOM entry point
+src/
+├── assets/
+├── components/
+│   ├── ui/
+│   ├── layout/
+│   └── shared/
+├── pages/
+│   ├── LandingPage.jsx          ← stays here
+│   ├── auth/
+│   │   ├── LoginPage.jsx
+│   │   ├── SignupPage.jsx
+│   │   ├── CheckEmailPage.jsx
+│   │   ├── LinkSentPage.jsx
+│   │   └── ResetPasswordPage.jsx
+│   ├── dashboard/               ← create this folder
+│   │   ├── OverviewPage.jsx
+│   │   ├── OrdersPage.jsx
+│   │   ├── MenusPage.jsx
+│   │   ├── ClientsPage.jsx
+│   │   └── NotificationsPage.jsx
+│   ├── orders/                  ← create this folder
+│   │   ├── OrderListPage.jsx
+│   │   └── OrderDetailPage.jsx
+│   ├── menus/                   ← create this folder
+│   │   ├── MenuListPage.jsx
+│   │   └── CreateMenuItemPage.jsx
+│   ├── clients/                 ← create this folder
+│   │   ├── ClientListPage.jsx
+│   │   ├── AddClientPage.jsx
+│   │   └── ClientDetailPage.jsx
+│   └── settings/                ← create this folder
+│       └── SettingsPage.jsx
+├── context/
+│   ├── AuthContext.jsx
+│   └── AppContext.jsx
+├── hooks/
+│   ├── useAuth.js
+│   ├── useOrders.js
+│   └── useMenuItems.js
+├── services/
+│   ├── api.js
+│   ├── authService.js
+│   ├── ordersService.js
+│   └── menuService.js
+├── utils/
+│   ├── formatDate.js
+│   ├── formatCurrency.js
+│   └── constants.js
+├── App.jsx
+└── main.jsx
 ├── .env.example
 ├── .eslintrc.js
 ├── .prettierrc
