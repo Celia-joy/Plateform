@@ -16,6 +16,7 @@ function SignupPage(){
             console.log("Password do not match")
             return
         }
+        navigate("/check-email")
         console.log("Full name:", fullName)
         console.log("Email:", email)
         console.log("Password:", password)
@@ -40,6 +41,7 @@ function SignupPage(){
                             placeholder="Full name"
                             value={fullName}
                             onChange={(e)=>setFullName(e.target.value)}
+                            className="flex-1 outline-none text-sm bg-transparent"
                         />
                     </div>
                     <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1 block">Email</label>
@@ -50,6 +52,7 @@ function SignupPage(){
                             placeholder="Email"
                             value={email}
                             onChange={(e)=>setEmail(e.target.value)}
+                            className="flex-1 outline-none text-sm bg-transparent"
                         />
                     </div>
                     <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1 block">Password</label>
@@ -60,6 +63,7 @@ function SignupPage(){
                             placeholder="........."
                             value={password}
                             onChange={(e)=>setPassword(e.target.value)}
+                            className="flex-1 outline-none text-sm bg-transparent"
                         />
                     </div>
                     <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1 block">Confirm password</label>
@@ -70,6 +74,7 @@ function SignupPage(){
                             placeholder="Confirm password"
                             value={confirmPassword}
                             onChange={(e)=>setConfirmPassword(e.target.value)}
+                            className="flex-1 outline-none text-sm bg-transparent"
                             
                         />
                     </div>

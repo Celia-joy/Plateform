@@ -14,10 +14,10 @@ function LoginPage (){
         console.log("Password:", password)
     }
     return (
-        <div className="min-h-screen flex items-center justify-center p-4">
+        <div className="min-h-screen bg-[#2D5016] flex items-center justify-center p-4">
             <div className="w-full max-w-sm bg-white rounded-3xl overflow-hidden">
                 <div className="bg-[#2D5016] px-8 pt-10 pb-8 text-center">
-                    <h1 className="text-2xl font-bold text-white">Plate<span classname="text-[#F5C518]">Form</span></h1>
+                    <h1 className="text-2xl font-bold text-white">Plate<span className="text-[#F5C518]">Form</span></h1>
                 </div>
                 <div className="bg-[#FAFAF8] px-7 py-8">
                     <h2 className="text-2xl font-bold text-gray-900 mb-1">WELCOME BACK</h2>
