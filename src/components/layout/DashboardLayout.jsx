@@ -46,7 +46,7 @@ function DashboardLayout(){
                 >
                  👤
                 </button>
-                <div className="mt-auto flex flex-gap-2">
+                <div className="mt-auto flex flex-col gap-2">
                     <button
                     onClick={()=>navigate("/dashboard/settings")}
                     className="w-12 h-12 rounded-xl flex items-center justify-center text-xl hover:bg-white hover:bg-opacity-10 transition-colors"
@@ -61,7 +61,7 @@ function DashboardLayout(){
                     </button>
                 </div>
             </div>
-            <div className="ml-20 flex-1 bg-[#FAFAF8">
+            <div className="ml-20 flex-1 bg-[#FAFAF8]">
                 <Outlet />
             </div>
         </div>
