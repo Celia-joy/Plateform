@@ -15,6 +15,10 @@ export default function App(){
                 <Route path="/check-email" element={<CheckEmailPage />} />
                 <Route path="/reset-password" element={<ResetPasswordPage />} />
                 <Route path="/link-sent" element={<LinkSentPage/>}/>
+                <Route path="/dashboard" element={<DashboardLayout/>}>
+                    <Route index element={<div>Dashboard</div>}/>
+                    
+                </Route>
             </Routes>
         </BrowserRouter>
     )
