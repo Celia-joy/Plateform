@@ -1,10 +1,10 @@
 function OverviewPage() {
   const clients = [
-    {name:"E BIS", sales:"$1000", category:"RESTO", updatedAt:"1d ago"},
-    {name:"CREDO", sales:"$10000", category:"HOTEL", updatedAt:"1h ago"},
-    {name:"CAPUCCINO", sales:"$500", category:"CAFE", updatedAt:"2h ago"},
-    {name:"CHINESE", sales:"$10000", category:"RESTO", updatedAt:"23h ago"},
-    {name:"GIA", sales:"$5000", category:"CAFE", updatedAt:"1w ago"}
+    {name:"E BIS", sales:"$1000", category:"RESTO", updatedAt:"Updated 1d ago"},
+    {name:"CREDO", sales:"$10000", category:"HOTEL", updatedAt:"Updated 1h ago"},
+    {name:"CAPUCCINO", sales:"$500", category:"CAFE", updatedAt:"Updated 2h ago"},
+    {name:"CHINESE", sales:"$10000", category:"RESTO", updatedAt:"Updated 23h ago"},
+    {name:"GIA", sales:"$5000", category:"CAFE", updatedAt:"Updated 1w ago"}
   ]
   return (
     <div className="flex flex-col h-screen">

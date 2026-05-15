@@ -12,7 +12,7 @@ function OrdersPage() {
     const filteredOrders = activeTab === "All"?orders:orders.filter(order => order.status === activeTab)
     return (
         <div className="flex flex-col h-screen">
-            <div classsName="bg-white border-b border-gray-100 px-8 py-4 flex items-center justify-between">
+            <div className="bg-white border-b border-gray-100 px-8 py-4 flex items-center justify-between">
                 <h1 className="text-xl font-bold text-gray-900">Orders</h1>
                 <button className="text-sm text-[#F5C518] font-semibold">
                     View trends →
