@@ -42,6 +42,9 @@ function NotificationsPage(){
                     Mark all as read
                 </button>
             </div>
+            <div className="p-8 max-w-2xl">
+                
+            </div>
 
         </div>
 
