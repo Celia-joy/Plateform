@@ -1,4 +1,6 @@
+import {useNavigate} from 'react-router-dom'
 function OverviewPage() {
+  const navigate = useNavigate()
   const clients = [
     {name:"E BIS", sales:"$1000", category:"RESTO", updatedAt:"Updated 1d ago"},
     {name:"CREDO", sales:"$10000", category:"HOTEL", updatedAt:"Updated 1h ago"},
@@ -13,6 +15,20 @@ function OverviewPage() {
         <button className="bg-[#F5C518] text-[#2D5016] font-bold text-sm px-4 py-2 rounded-lg">
           + Add a new client
         </button>
+        <div className="flex items-center gap-4">
+          <button 
+          onClick={() => navigate("/dashboard/notifications")}
+          className="text-xl hover:opacity-70 transition-opacity relative"
+          >
+            🔔
+            <span className="absolute -top-1 -right-1 w-4 h-4 bg-[#F5C518] rounded-full font-bold text-[#2D5016] flex items-center justify-center">
+              2
+            </span>
+          </button>
+          <div className="w-8 h-8 bg-[#2D5016] rounded-full flex items-center justify-center text-white text-xs font-bold">
+            J
+          </div>
+        </div>
       </div>
       <div className="p-8">
         <h2 className="text-lg font-bold text-gray-900 mb-4">All Clients</h2>

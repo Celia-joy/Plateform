@@ -1,6 +1,8 @@
 import {useState} from 'react'
+import {useNavigate} from 'react-router-dom'
 
 function OrdersPage() {
+    const navigate = useNavigate()
     const [activeTab, setActiveTab] = useState("New")
     const orders = [
         {id:1, name:"Tom Yummy", sub:"Celia Joy's speciality", status:"New"},
@@ -17,6 +19,20 @@ function OrdersPage() {
                 <button className="text-sm text-[#F5C518] font-semibold">
                     View trends →
                 </button>
+                <div className="flex items-center gap-4">
+            <button 
+                onClick={() => navigate("/dashboard/notifications")}
+                className="text-xl hover:opacity-70 transition-opacity relative"
+            >
+            🔔
+                <span className="absolute -top-1 -right-1 w-4 h-4 bg-[#F5C518] rounded-full font-bold text-[#2D5016] flex items-center justify-center">
+                    2
+                </span>
+            </button>
+            <div className="w-8 h-8 bg-[#2D5016] rounded-full flex items-center justify-center text-white text-xs font-bold">
+                J
+            </div>
+        </div>
             </div>
             <div className="p-8 flex gap-6">
                 <div className="flex-1">

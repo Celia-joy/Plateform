@@ -35,7 +35,7 @@ function DashboardLayout(){
                  📦
                 </button>
                 <button
-                  onClick={()=> navigate("/dashboard/tables")}
+                  onClick={()=> navigate("/dashboard/table-booking")}
                   className="w-12 h-12 rounded-xl flex items-center justify-center text-xl hover:bg-white hover:bg-opacity-10 transition-colors"
                 >
                 🪑

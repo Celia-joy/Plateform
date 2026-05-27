@@ -127,7 +127,9 @@ src/
 │   │   ├── OrdersPage.jsx
 │   │   ├── MenusPage.jsx
 │   │   ├── ClientsPage.jsx
-│   │   └── NotificationsPage.jsx
+│   │   ├── NotificationsPage.jsx
+│   │   ├── StaffPage.jsx
+│   │   ├── TableBookingPage.jsx
 │   ├── orders/                  ← create this folder
 │   │   ├── OrderListPage.jsx
 │   │   └── OrderDetailPage.jsx

@@ -8,8 +8,9 @@ import DashboardLayout from './components/layout/DashboardLayout'
 import OverviewPage from './pages/dashboard/OverviewPage'
 import OrdersPage from './pages/dashboard/OrdersPage'
 // import ClientsPage from './pages/dashboard/ClientsPage'
- import MenusPage from './pages/dashboard/MenusPage'
+import MenusPage from './pages/dashboard/MenusPage'
 import NotificationsPage from './pages/dashboard/NotificationsPage'
+import StaffPage from './pages/dashboard/StaffPage'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 export default function App() {
@@ -31,6 +32,8 @@ export default function App() {
           {/*<Route path="clients" element={<ClientsPage />} />*/}
           <Route path="menus" element={<MenusPage />} />
           <Route path="notifications" element={<NotificationsPage />} />
+          <Route path="staff" element={<StaffPage />} />
+
         </Route>
       </Routes>
     </BrowserRouter>
