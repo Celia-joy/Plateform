@@ -11,6 +11,8 @@ import OrdersPage from './pages/dashboard/OrdersPage'
 import MenusPage from './pages/dashboard/MenusPage'
 import NotificationsPage from './pages/dashboard/NotificationsPage'
 import StaffPage from './pages/dashboard/StaffPage'
+import TableBookingPage from './pages/dashboard/TableBookingPage'
+import OrderConfirmedPage from './pages/dashboard/OrderConfirmedPage'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 export default function App() {
@@ -33,7 +35,8 @@ export default function App() {
           <Route path="menus" element={<MenusPage />} />
           <Route path="notifications" element={<NotificationsPage />} />
           <Route path="staff" element={<StaffPage />} />
-
+          <Route path="table-booking" element={<TableBookingPage />} />
+          <Route path="order-confirmed" element={<OrderConfirmedPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

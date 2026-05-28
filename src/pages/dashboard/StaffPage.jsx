@@ -21,7 +21,7 @@ function StaffPage(){
                         className="text-xl hover:opacity-70 transition-opacity relative"
                     >
                         🔔
-                        <span className="absolute -top-1 -right-1 w-4 h-4 bg-[#F5C518] rounded-full font-bold text-[#2D5016] flex items-center justify-center">
+                        <span className="absolute -top-1 -right-1 w-4 h-4 font-bold text-[#2D5016] flex items-center justify-center">
                             2
                         </span>
                     </button>
@@ -31,7 +31,7 @@ function StaffPage(){
                 </div>
             </div>
             <div className="p-8">
-                <div className="grid grid-cols-3 gap-4 mb-8 max-w-lg">
+                <div className="grid grid-cols-3 gap-4 mb-8 max-w-lg mx-auto">
                     <div className="bg-white border border-gray-100 rounded-xl p-4 text-center">
                         <div className="text-2xl font-bold text-gray-900">12</div>
                         <div className="text-xs text-gray-400 mt-1">Total Staff</div>

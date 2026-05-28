@@ -130,6 +130,8 @@ src/
 │   │   ├── NotificationsPage.jsx
 │   │   ├── StaffPage.jsx
 │   │   ├── TableBookingPage.jsx
+│   │   ├── OrdersConfirmedPage.jsx
+        
 │   ├── orders/                  ← create this folder
 │   │   ├── OrderListPage.jsx
 │   │   └── OrderDetailPage.jsx

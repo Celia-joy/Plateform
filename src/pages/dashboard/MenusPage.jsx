@@ -31,7 +31,7 @@ function MenusPage() {
           className="text-xl hover:opacity-70 transition-opacity relative"
           >
             🔔
-            <span className="absolute -top-1 -right-1 w-4 h-4 bg-[#F5C518] rounded-full font-bold text-[#2D5016] flex items-center justify-center">
+            <span className="absolute -top-1 -right-1 w-4 h-4 font-bold text-[#2D5016] flex items-center justify-center">
               2
             </span>
           </button>
