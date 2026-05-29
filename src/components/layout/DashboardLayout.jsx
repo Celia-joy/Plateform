@@ -53,12 +53,6 @@ function DashboardLayout(){
                     >
                     ⚙️
                     </button>
-                    <button
-                    onClick={()=>navigate("/dashboard/account")}
-                    className="w-12 h-12 rounded-xl flex items-center justify-center text-xl hover:bg-white hover:bg-opacity-10 transition-colors"
-                    >
-                    👤
-                    </button>
                 </div>
             </div>
             <div className="ml-20 flex-1 bg-[#FAFAF8]">

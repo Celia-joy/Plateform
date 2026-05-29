@@ -25,9 +25,11 @@ function OverviewPage() {
               2
             </span>
           </button>
-          <div className="w-8 h-8 bg-[#2D5016] rounded-full flex items-center justify-center text-white text-xs font-bold">
-            J
-          </div>
+          <button 
+                onClick ={()=>navigate("/dashboard/settings")}
+                className="w-8 h-8 bg-[#2D5016] rounded-full flex items-center justify-center text-white text-xs font-bold">
+                    J
+          </button>
         </div>
       </div>
       <div className="p-8">

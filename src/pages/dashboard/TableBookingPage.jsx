@@ -45,9 +45,11 @@ function TableBookingPage(){
                             2
                         </span>
                     </button>
-                    <div className="w-8 h-8 bg-[#2D5016] rounded-full flex items-center justify-center text-white text-xs font-bold">
-                        J
-                    </div>
+                    <button 
+                        onClick ={()=>navigate("/dashboard/settings")}
+                        className="w-8 h-8 bg-[#2D5016] rounded-full flex items-center justify-center text-white text-xs font-bold">
+                            J
+                    </button>
                     <button className="bg-[#F5C518] text-[#2D5016] font-bold text-sm px-4 py-2 rounded-lg">
                         + New booking
                     </button>
