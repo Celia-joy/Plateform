@@ -15,6 +15,7 @@ import TableBookingPage from './pages/dashboard/TableBookingPage'
 import OrderConfirmedPage from './pages/dashboard/OrderConfirmedPage'
 import SettingsPage from './pages/dashboard/SettingsPage'
 import NotFoundPage from './pages/NotFoundPage'
+import AddClientPage from './pages/clients/AddClientPage'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 export default function App() {
@@ -42,6 +43,7 @@ export default function App() {
           <Route path="settings" element={<SettingsPage />} />
         </Route>
         <Route path="*" element={<NotFoundPage />} />
+        <Route path="clients/new" element={<AddClientPage/>} />
       </Routes>
     </BrowserRouter>
   )

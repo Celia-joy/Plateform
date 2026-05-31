@@ -12,7 +12,9 @@ function ClientsPage(){
     <div className="flex flex-col h-screen">
         <div className="bg-white border-b border-gray-100 px-8 py-4 flex items-center justify-between">
             <h1 className="text-xl font-bold text-gray-900">Clients</h1>
-            <button className="bg-[#F5C518] text-[#2D5016] font-bold text-sm px-4 py-2 rounded-lg">
+            <button 
+            onClick={()=> navigate("clients/new")}
+            className="bg-[#F5C518] text-[#2D5016] font-bold text-sm px-4 py-2 rounded-lg">
                 + Add a new client
             </button>
             <div className="flex items-center gap-4">
