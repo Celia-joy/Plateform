@@ -133,13 +133,10 @@ src/
 │   │   ├── OrdersConfirmedPage.jsx
         
 │   ├── orders/                  ← create this folder
-│   │   ├── OrderListPage.jsx
 │   │   └── OrderDetailPage.jsx
 │   ├── menus/                   ← create this folder
-│   │   ├── MenuListPage.jsx
 │   │   └── CreateMenuItemPage.jsx
 │   ├── clients/                 ← create this folder
-│   │   ├── ClientListPage.jsx
 │   │   ├── AddClientPage.jsx
 │   │   └── ClientDetailPage.jsx
 │   └── settings/                ← create this folder
