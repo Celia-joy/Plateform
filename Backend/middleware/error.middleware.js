@@ -1,12 +1,36 @@
-const errorMiddleware = (err, req, res, next) => {
-  const statusCode = err.statusCode || 500
-  const message = err.message || 'Internal Server Error'
+const errorMiddleware = (err, req, res, next) =>{
+    try{
+        let error = { ... err};
+        error.message = err.message;
+        console.error(err);
 
-  res.status(statusCode).json({
-    success: false,
-    message,
-    details: err.details || null
-  })
-}
+    // Defining some errors
+    //1.Mongoose bad ObjectId
+    if(err.name === 'CastError'){
+        const message = 'Resource not found'
+        error = new Error(message);
+        error.statusCode = 404;
+    }
+    //2.Mongoose duplicate key
+    if(err.code === 11000){
+        const message = 'Duplicate field value entered';
+        error = new Error(message);
+        error.statusCode = 400;
+    }
+    //3. Mongoose validation error
+    if(err.name === 'ValidationError'){
+        const message = Object.values(err.errors).map(val =>val.message);
+        error = new Error(message.join(', '));
+        error.statusCode = 400;
+    }
+    res.status(err.statusCode || 500).json({
+        success:false,
+        error: error.message || 'Internal server error'
+    });
+    }
+    catch(error){
+        next(error);
+    }
+};
 
-export default errorMiddleware 
+export default errorMiddleware;

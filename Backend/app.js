@@ -1,17 +1,7 @@
-import './config/env.js'
 import express from 'express'
-import connectDB from './Database/mongodb.js'
+import connectToDatabase from './Database/mongodb.js'
 import errorMiddleware from './middleware/error.middleware.js'
 import { PORT } from './config/env.js'
-
-const app = express()
-
-connectDB()
-
-
-app.use(express.json())
-
-// Routes (uncomment as you build each one)
 // import authRoutes from './Routes/auth.routes.js'
 // import restaurantRoutes from './Routes/restaurant.routes.js'
 // import tableRoutes from './Routes/table.routes.js'
@@ -19,6 +9,10 @@ app.use(express.json())
 // import reservationRoutes from './Routes/reservation.routes.js'
 // import orderRoutes from './Routes/order.routes.js'
 
+const app = express()
+
+app.use(express.json())
+app.use(express.urlencoded({extended:false}))
 // app.use('/api/auth', authRoutes)
 // app.use('/api/restaurants', restaurantRoutes)
 // app.use('/api/tables', tableRoutes)
@@ -26,7 +20,12 @@ app.use(express.json())
 // app.use('/api/reservations', reservationRoutes)
 // app.use('/api/orders', orderRoutes)
 
-
+app.get('/', (req, res)=>{
+    res.send("Welcome to the Plateform api");
+});
 app.use(errorMiddleware)
 
-app.listen(PORT, () => console.log(`PlateForm API running on port ${PORT}`))
+app.listen(PORT, async()=>{
+    console.log(`Server running on http://localhost:${PORT}`);
+    await connectToDatabase;
+})
