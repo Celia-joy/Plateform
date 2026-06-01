@@ -83,7 +83,9 @@ function MenusPage() {
 
         </div>
         <div className="w-48 flex-shrink-0">
-          <div className="bg-[#F5C518] rounded-lg px-4 py-2 text-center text-xs font-bold text-[#2D5016] mb-4">
+          <div 
+          onClick={()=> navigate("/menus/new")}
+          className="bg-[#F5C518] rounded-lg px-4 py-2 text-center text-xs font-bold text-[#2D5016] mb-4">
             + CREATE NEW MENU ITEM
           </div>
           <div className="flex flex-col gap-3">
