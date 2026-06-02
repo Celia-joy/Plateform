@@ -16,6 +16,7 @@ import OrderConfirmedPage from './pages/dashboard/OrderConfirmedPage'
 import SettingsPage from './pages/dashboard/SettingsPage'
 import NotFoundPage from './pages/NotFoundPage'
 import AddClientPage from './pages/clients/AddClientPage'
+import AddOrderPage from './pages/orders/AddOrderPage'
 import CreateMenuItemPage from './pages/menus/CreateMenuItemPage'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
@@ -46,6 +47,7 @@ export default function App() {
         <Route path="*" element={<NotFoundPage />} />
         <Route path="clients/new" element={<AddClientPage/>} />
         <Route path="menus/new" element={<CreateMenuItemPage/>} />
+        <Route path="orders/new" element={<AddOrderPage />} />
       </Routes>
     </BrowserRouter>
   )
