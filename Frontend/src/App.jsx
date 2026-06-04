@@ -22,6 +22,7 @@ import BookingPage from './pages/Client-side/BookingPage'
 import BookingConfirmedPage from './pages/Client-side/BookingConfirmedPage'
 import ClientDetailedPage from './pages/clients/ClientDetailedPage'
 import MenuDetailedPage from './pages/menus/MenuDetailedPage'
+import RestaurentSetupPage from './pages/onBoarding/RestaurentSetupPage'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 export default function App() {
@@ -56,6 +57,7 @@ export default function App() {
         <Route path="/booking-confirmed" element={<BookingConfirmedPage />} />
         <Route path="clients/:id" element={<ClientDetailedPage />} />
         <Route path="menus/:id" element={<MenuDetailedPage />} />
+        <Route path="/setup" element={<RestaurentSetupPage />} />
 
       </Routes>
     </BrowserRouter>

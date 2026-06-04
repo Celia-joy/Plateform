@@ -27,7 +27,7 @@ function CheckEmailPage() {
           </p>
 
           <button
-            onClick={() => navigate("/dashboard")}
+            onClick={() => navigate("/setup")}
             className="w-full bg-[#F5C518] font-bold py-3 rounded-xl text-sm cursor-pointer mb-4"
           >
             Verify my email
