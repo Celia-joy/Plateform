@@ -8,6 +8,7 @@ import tableRoutes from './Routes/table.routes.js'
 import menuRoutes from './Routes/menu.routes.js'
 import reservationRoutes from './Routes/reservation.routes.js'
 import orderRoutes from './Routes/order.routes.js'
+import startReminderJob from './utils/reminder.js'
 
 const app = express()
 
@@ -25,7 +26,8 @@ app.get('/', (req, res)=>{
 });
 app.use(errorMiddleware)
 
-app.listen(PORT, async()=>{
+app.listen(PORT, ()=>{
     console.log(`Server running on http://localhost:${PORT}`);
-    await connectToDatabase;
+    connectToDatabase()
+    startReminderJob()
 })

@@ -20,6 +20,8 @@ import AddOrderPage from './pages/orders/AddOrderPage'
 import CreateMenuItemPage from './pages/menus/CreateMenuItemPage'
 import BookingPage from './pages/Client-side/BookingPage'
 import BookingConfirmedPage from './pages/Client-side/BookingConfirmedPage'
+import ClientDetailedPage from './pages/clients/ClientDetailedPage'
+import MenuDetailedPage from './pages/menus/MenuDetailedPage'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 export default function App() {
@@ -52,6 +54,8 @@ export default function App() {
         <Route path="orders/new" element={<AddOrderPage />} />
         <Route path="/book/:restaurantslug" element={<BookingPage />} />
         <Route path="/booking-confirmed" element={<BookingConfirmedPage />} />
+        <Route path="clients/:id" element={<ClientDetailedPage />} />
+        <Route path="menus/:id" element={<MenuDetailedPage />} />
 
       </Routes>
     </BrowserRouter>
